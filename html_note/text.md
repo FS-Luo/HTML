@@ -26,13 +26,41 @@
 
 ## 2. 列表
 ### 1. 无序列表(Unordered list)
+无序的列表被用来标记每个项目，项目的顺序并不重要 。
+```html
+<ul>
+    <li>item_1</li>
+    <li>item_2</li>
+    <li>item_3</li>
+    <li>...</li>
+</ul>
+```
 
 ### 2. 有序列表(Ordered list)
+有序的列表是根据项目的顺序列出来的。
+```html
+<ol>
+    <li>item_1</li>
+    <li>item_2</li>
+    <li>item_3</li>
+    <li>...</li>
+</ol>
+```
 
 ### 3. 嵌套列表(Nesting lists)
+将一个列表嵌入到另一个列表是完全可以的。
 
 ## 3. 重点强调
+### 1. 强调
+使用 `<em></em>` (emphasis)元素将文字写成 *斜体* 来强调文本。
+### 2. 非常重要
+使用 `<strong></strong>` (strong importance)元素将文字写成 **粗体** 来强调重要的文本。
+### 3. 斜体字、粗体字、下划线...
+* `<i>` : 斜体文字  
+* `<b>` : 粗体文字  
+* `<u>` : 下划线  
+仅仅影响表象而没有语义，被称为表象元素(presentational elements)。  
 
-
+**关于下划线的警告**：人们很容易把下划线和超链接联系起来。因此，在Web上，最好只在链接上使用下划线。当语义适合时使用`<u>`元素，但是有时候在Web上用CSS改变下划线默认的的样式更加合适。
 
 # Advanced text formatting
