@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Video&Audio-Test</title>
+</head>
+<body>
+    <h1>This page is for html video&audio test</h1>
+    
+    <!-- html video test code -->
+    <video controls 
+        width="400" height="400" 
+        poster="images/poster.png" 
+        preload="metadata" muted >
+        <source src="videos/rabbit320.webm" type="video/webm">
+        <source src="videos/rabbit320.mp4" type="video/mp4"> 
+        <p>
+            你的浏览器不支持 HTML5 视频。可点击 
+            <a href="videos/rabbit320.mp4">此链接</a>
+            观看。
+        </p>
+    </video>
+
+    <hr>
+    
+    <!-- html audio test code -->
+    <audio controls>
+        <source src="audios/viper.mp3" type="audio/mp3">
+        <source src="audios/viper.ogg" type="audio/ogg">
+        <p>
+            你的浏览器不支持 HTML5 音频，可点击
+            <a href="audios/viper.mp3">此链接</a> 收听。
+        </p>
+    </audio>
+
+    <hr>
+
+    <!-- web video text tracks -->
+    <video controls 
+        preload="metadata">
+        <source src="videos/sintel-short.mp4" type="video/mp4">
+        <source src="videos/sintel-short.webm" type="video/webm">
+            <!-- 目前字幕可以在IE中正常播放，Chrome不能显示，暂不清楚原因 -->
+        <track src="WebVTT/sintel-en.vtt" kind="subtitles" srclang="en" label="English" default>
+        <track src="WebVTT/sintel-de.vtt" kind="subtiltes" srclang="de" label="Deutsch">
+        <track src="WebVTT/sintel-es.vtt" kind="subtitles" srclang="es" label="Español">
+    </video>
+
+</body>
+</html>
