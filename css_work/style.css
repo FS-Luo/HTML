@@ -1,0 +1,26 @@
+/* 使用 元素选择器 */
+p, li {
+    color: green;
+}
+
+/* 修改 列表项目 前的 项目符号 */
+li {
+    list-style-type: square;
+}
+
+/* 使用 类 选择器 */
+li.special,
+span.special {
+    color: orange;
+    font-weight: bold;
+}
+
+/* 使用 后代组合器 */
+li em {
+    color: rebeccapurple;
+}
+
+/* 使用 相邻兄弟组合器 */
+h1 + p {
+    font-size: 200%;
+}
