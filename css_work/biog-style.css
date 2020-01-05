@@ -1,0 +1,46 @@
+/* 应用于 biog-test.html 的 CSS 文件 */
+
+/* 先统一设定字体，具体内容的字体如果有区别可以在后面覆盖 */
+body {
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+h1 {
+    color: hotpink;
+    border-bottom: purple dotted 10px;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    font-size: 50px;
+    padding: 10px 0;
+}
+
+p, ul {
+    font-size: 20px;
+}
+
+.job-title {
+    font-weight: bold;
+    color: #999999;
+}
+
+h2 {
+    font-style: italic;
+    font-size: 30px;
+}
+
+ul {
+    background-color: #eeeeee;
+    border: 5px purple solid; 
+    padding: 30px 40px;
+}
+
+li {
+    height: 30px;
+}
+
+a:link, a:visited {
+    color: orange;
+}
+
+a:hover {
+    text-decoration: none;
+}

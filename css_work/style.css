@@ -21,6 +21,35 @@ li em {
 }
 
 /* 使用 相邻兄弟组合器 */
-h1 + p {
+/* 仅选中紧跟再 h1 后面具有相同层级的 p 元素 */
+h1 + p { 
     font-size: 200%;
+}
+
+/* 使用多种选择器和组合器的组合 */
+/* 在 <body> 之内，紧接在 <h1> 后面的 <p> 元素的内部，类名为 special */
+body h1 + p .special {
+    color: yellow;
+    background-color: black;
+    padding: 5px;
+}
+
+/* 属性的值以 函数 的形式出现 */
+.outer {
+    border: 5px solid black
+}
+
+.inner {
+    padding: 10px;
+    width: calc(90% - 30px);
+    background-color: rebeccapurple;
+    color: white;
+}
+
+.box {
+    margin: 30px;
+    width: 100px;
+    height: 100px;
+    background-color: rebeccapurple;
+    transform: rotate(0.125turn)
 }
