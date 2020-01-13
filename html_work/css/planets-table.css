@@ -9,19 +9,20 @@ table {
 }
 
 caption {
-    font: 2em bold;
-    color:  rgb(97, 21, 160);
+    font-size: 2em;
+    font-weight: bold;
+    color:  rgb(121, 87, 13);
     padding: 5px;
     margin-bottom: 10px;
     text-align: center;
-    text-shadow: 3px 3px 5px violet;
+    text-shadow: 3px 3px 3px rgb(39, 141, 167);
 }
 
 thead {
     color: white;
     text-shadow: 2px 2px 3px black;
     background-color: lightskyblue;
-    background-image: linear-gradient(to bottom, rgba(0,0,0,0.1), rgba(0,0,0,0.5))
+    background-image: linear-gradient(to bottom, rgba(0,0,0,0.1), rgba(66, 36, 36, 0.5));
 }
 
 
@@ -31,16 +32,43 @@ tbody {
 
 tbody tr:nth-child(odd) td {
     background-color: lightsteelblue;
+    background-image: linear-gradient(to bottom, rgba(0,0,0,0.05), rgba(0,0,0,0.25));
 }
 
 tbody tr:nth-child(even) td {
-    background-color: lightslategray;
+    background-color: rgb(176, 188, 201);
+    background-image: linear-gradient(to bottom, rgba(0,0,0,0.05), rgba(0,0,0,0.25));
+
 }
 
-tbody tr th {
-    background-color: blueviolet;
+.class {
+    background-color: rgba(10, 39, 51, 0.192);
+}
+
+.name {
+    background-color: rgba(39, 51, 70, 0.301)
+}
+
+.class, .name {
+    border: 2px solid black;
 }
 
 td {
     letter-spacing: 1px;
+}
+
+p {
+    text-align: right;
+    font-weight: bold;
+    font-size: 1em;
+}
+
+
+a:link, a:visited {
+   color: blue; 
+}
+
+a:hover {
+    text-decoration: none;
+    color: orangered;
 }
