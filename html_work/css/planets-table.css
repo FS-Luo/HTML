@@ -1,0 +1,46 @@
+table {
+    table-layout: fixed;
+    border: 3px rgba(0, 0, 0, 0.849) solid;
+    border-collapse: collapse;
+    width: 100%;
+    font-size: 0.9em;
+    text-align: center;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+caption {
+    font: 2em bold;
+    color:  rgb(97, 21, 160);
+    padding: 5px;
+    margin-bottom: 10px;
+    text-align: center;
+    text-shadow: 3px 3px 5px violet;
+}
+
+thead {
+    color: white;
+    text-shadow: 2px 2px 3px black;
+    background-color: lightskyblue;
+    background-image: linear-gradient(to bottom, rgba(0,0,0,0.1), rgba(0,0,0,0.5))
+}
+
+
+tbody {
+    background-image: url("../images/noise.png");
+}
+
+tbody tr:nth-child(odd) td {
+    background-color: lightsteelblue;
+}
+
+tbody tr:nth-child(even) td {
+    background-color: lightslategray;
+}
+
+tbody tr th {
+    background-color: blueviolet;
+}
+
+td {
+    letter-spacing: 1px;
+}

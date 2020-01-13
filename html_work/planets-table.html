@@ -3,22 +3,13 @@
 <head>
     <meta charset="UTF-8">
     <title>太阳系行星数据</title>
-    <link href="css/minimal-table.css" rel="stylesheet" type="text/css">
+    <link href="css/planets-table.css" rel="stylesheet" type="text/css">
 </head>
 <body>
-    <h1>太阳系行星数据</h1>
-
     <table>
         <caption>
             太阳系中行星的一些数据
-            <a href="http://nssdc.gsfc.nasa.gov/planetary/factsheet/">（资料及图片取自 NASA 行星数据（公制单位））</a>
         </caption>
-        
-        <colgroup>
-            <col span="2">
-            <col style="border: 2px solid black">
-            <!-- 剩余的列若无需渲染则可以省略 -->
-        </colgroup>
 
         <thead>
             <tr>
@@ -166,5 +157,8 @@
 
     </table>
 
+    <p class="note">
+        备注：资料及图片取自 <a href="http://nssdc.gsfc.nasa.gov/planetary/factsheet/">NASA 行星数据（公制单位）</a>
+    </p>
 </body>
 </html>
