@@ -1,0 +1,165 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Postcard example</title>
+    <style>
+        /* 定义@font-face规则 */
+        @font-face {
+            font-family: "handwriting";
+            src: url("fonts/journal-webfont.woff2") format("woff2"),
+                 url("fonts/journal-webfont.woff") format("woff");
+            font-weight: normal;
+            font-sytle: normal;
+        }
+
+        @font-face {
+            font-family: "typewriter";
+            src: url("fonts/veteran_typewriter-webfont.woff2") format("woff2"),
+                 url("fonts/veteran_typewriter-webfont.woff") format("woff");
+            font-weight: normal;
+            font-style: normal;
+        }
+
+        body {
+            background-color: #222;
+            font-size: 20px;
+        }
+
+        form {
+            width: 740px;
+            height: 498px;
+            background-image: url("images/postcard-bg-img.jpg");
+
+            position: relative;
+            margin: 2em auto; 
+        }
+
+        div.info {
+            position: absolute;
+            left: 380px;
+        }
+
+        #to {
+            top: 188px;
+        }
+
+        #from {
+            top: 238px;
+        }
+
+        #reply {
+            top: 288px;
+        }
+
+        #message {
+            position: absolute;
+            left: 20px;
+            top: 70px;
+        }
+
+        label {
+            font-family: "typewriter", sans-serif;
+            font-size: 1em;
+        }
+
+        div.info label {
+            display: inline-block;
+            width: 60px;
+            text-align: right;
+        }
+
+        input, textarea {
+            font-family: "handwriting", sans-serif;
+            font-size: 1.2em;
+            font-weight: bold;
+            letter-spacing: 4px;
+
+            border: none;
+            padding: 0 10px;
+            margin: 0;
+            width: 240px;
+            background: none;
+        }
+
+        input:focus, textarea:focus {
+            background-color: rgba(0,0,0,.1);
+            border-radius: 5px;
+            outline: none;
+        }
+
+        /* input {
+            height: 2em;
+            vertical-align: middle;
+        } */
+        
+        textarea {
+            display: block;
+            padding: 10px;
+            margin: 5px 0 0 -10px;
+            width: 340px;
+            height: 320px;
+
+            resize: none;
+            overflow: auto;
+        }
+
+        button {
+            font-family: Arial, Helvetica, sans-serif;
+            font-size: 0.8em;
+            font-weight: bold;
+
+            padding: 5px;
+
+            position: absolute;
+            left: 440px;
+            top: 360px;
+
+            border: 2px solid #333;
+            border-radius: 5px;
+            
+            background: none;
+
+            -webkit-transform: rotate(-1.5deg);
+            -moz-transform: rotate(-1.5deg);
+            -ms-transform: rotate(-1.5deg);
+            -o-transform: rotate(-1.5deg);
+            transform: rotate(-1.5deg);
+        }
+
+        button:hover, button:focus {
+            background-color: #000;
+            color: #fff;
+        }
+    </style>
+</head>
+<body>
+    <form>
+        <div class="info" id="to">
+            <label for="to">to: </label>
+            <input type="text" id="to" name="mailto" value="Mozilla">
+        </div>
+       
+        <div class="info" id="from">
+            <label for="name">from: </label>
+            <input type="text" id="name" name="user_name">
+        </div>
+
+        <div class="info" id="reply">
+            <label for="mail">reply: </label>
+            <input type="email" id="mail" name="user_email">
+        </div>
+
+        <div id="message">
+            <label for="msg">Your message: </label>
+            <textarea id="msg" name="user_message"></textarea>
+        </div>
+
+        <div class="button">
+            <button type="submit">Send your message >>></button>
+        </div>
+    </form> 
+</body>
+</html>

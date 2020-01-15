@@ -1,0 +1,43 @@
+html {
+    font: 10px Helvetica, Arial, sans-serif;
+}
+
+#content {
+    width: 60%;
+    margin: 0 auto;
+    padding: 1em 1em;
+    background-color: #ddd;  
+}
+
+h2 {
+    font-size: 2rem;
+}
+
+p, ul, ol, dl {
+    font-size: 1.5rem;
+}
+
+li, p, dt, dd {
+    line-height: 1.5;
+}
+
+ul {
+    list-style-type: none;
+    padding-left: 2rem;
+}
+
+ul li {
+    background-image: url("images/star.svg");
+    background-position: 0 0;
+    background-size: 1.6rem 1.6rem;
+    background-repeat: no-repeat;
+    padding-inline-start: 2rem;
+}
+
+ol {
+    list-style-type: upper-roman;
+}
+
+dt {
+    font-weight: bold;
+}
